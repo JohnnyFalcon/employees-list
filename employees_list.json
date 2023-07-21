@@ -1,0 +1,11 @@
+[
+  {
+    "id": 0,
+    "name": "Jakub",
+    "surname": "Sokołowski",
+    "occupation": "frontend",
+    "location": "Poznań",
+    "start_date": "2023-07-21",
+    "earnings": "5000"
+  }
+]

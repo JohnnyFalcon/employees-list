@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Employees List</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <h2 class="nav-title">Employees List</h2>
+      <span class="icon">
+        <i class="fas fa-list-ol fa-2x"></i>
+      </span>
+    </header>
+
+    <div class="table-container">
+      <table id="myTable" class="display">
+        <div class="btn-div">
+          <div class="btns-left">
+            <a class="btn btn-white btn-add">Dodaj pracownika</a>
+            <a class="btn-disabled btn-white delete-one">Usuń pracownika</a>
+            <div class="div-spinner">
+              <div class="spinner spinner-delete">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+
+          <a class="btn btn-white delete">Wyczyść tabele</a>
+        </div>
+
+        <thead>
+          <tr>
+            <th>id</th>
+            <th>Imię</th>
+            <th>Nazwisko</th>
+            <th>Stanowisko</th>
+            <th>Lokalizacja</th>
+            <th>Data rozpoczęcia</th>
+            <th>Zarobki</th>
+          </tr>
+        </thead>
+      </table>
+    </div>
+
+    <form class="employee-form">
+      <i class="fas fa-times close"></i>
+      <div class="form-title">
+        <h2>DODAJ PRACOWNIKA</h2>
+      </div>
+
+      <div class="input-div">
+        <label for="name">Imię</label>
+        <input type="text" name="name" id="name" placeholder="Imię" required />
+      </div>
+      <div class="input-div">
+        <label for="surname">Nazwisko</label>
+        <input
+          type="text"
+          name="surname"
+          id="surname"
+          placeholder="Nazwisko"
+          required
+        />
+      </div>
+      <div class="input-div">
+        <label for="occupation">Stanowisko</label>
+        <input
+          type="text"
+          name="occupation"
+          id="occupation"
+          placeholder="Stanowisko"
+          required
+        />
+      </div>
+      <div class="input-div">
+        <label for="location">Lokalizacja</label>
+        <input
+          type="text"
+          name="location"
+          id="location"
+          placeholder="Lokalizacja"
+          required
+        />
+      </div>
+      <div class="input-div">
+        <label for="start-date">Data rozpoczęcia</label>
+        <input
+          type="date"
+          name="start-date"
+          id="start-date"
+          placeholder="Data rozpoczęcia"
+          required
+        />
+      </div>
+      <div class="input-div">
+        <label for="earnings">Zarobki</label>
+        <input
+          type="number"
+          name="earnings"
+          id="earnings"
+          placeholder="Zarobki"
+          required
+        />
+      </div>
+      <button class="submit-btn" type="submit">Submit</button>
+      <div class="submit-msg"><p>Pracownik został dodany !</p></div>
+      <div class="spinner spinner-submit">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </form>
+
+    <div class="overlay"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.5/js/jquery.dataTables.js"></script>
+    <script src="https://cdn.datatables.net/v/dt/dt-1.13.5/b-2.4.1/b-html5-2.4.1/r-2.5.0/datatables.min.js"></script>
+    <script src="https://cdn.datatables.net/datetime/1.5.1/js/dataTables.dateTime.min.js"></script>
+    <script src="employees-list.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+  </body>
+</html>
