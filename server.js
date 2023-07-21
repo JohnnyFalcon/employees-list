@@ -81,7 +81,7 @@ app.post("/delete-one", (req, res) => {
 
 export const handler = serverless(app);
 
-//Binding the server to a port(3000)
-app.listen(port, () => {
-  console.log(`Server running on port ${port}`);
-});
+// //Binding the server to a port(3000)
+// app.listen(port, () => {
+//   console.log(`Server running on port ${port}`);
+// });
