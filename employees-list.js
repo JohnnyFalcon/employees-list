@@ -42,7 +42,7 @@ $(document).ready(function () {
         console.log(newObject);
         $.ajax({
           type: "POST",
-          url: "https://cheery-madeleine-8e2491.netlify.app",
+          url: "http://localhost:3000",
           data: JSON.stringify(newObject),
           contentType: "application/json",
           success: function (response) {
@@ -72,7 +72,7 @@ $(document).ready(function () {
   $(".delete").on("click", function () {
     $.ajax({
       type: "POST",
-      url: "https://cheery-madeleine-8e2491.netlify.app/clear-all",
+      url: "http://localhost:3000/clear-all",
       success: function (response) {
         console.log(response.message);
         location.reload();
@@ -101,7 +101,7 @@ $(document).ready(function () {
           var newData = removeObjectWithId(data, id);
           $.ajax({
             type: "POST",
-            url: `https://cheery-madeleine-8e2491.netlify.app/delete-one`,
+            url: `http://localhost:3000/delete-one`,
             data: JSON.stringify(newData),
             contentType: "application/json",
             success: function (response) {
